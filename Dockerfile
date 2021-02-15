@@ -2,8 +2,6 @@ FROM composer
 
 LABEL description="A basic composer + prestissimo image"
 
-RUN composer global require hirak/prestissimo
-
 RUN apk --no-cache add php7-gd freetype-dev libjpeg-turbo-dev libpng-dev
 
 # Install selected extensions
